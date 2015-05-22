@@ -9,10 +9,8 @@ It has been tested with clean installs of Ubuntu 12, 13, 14 and 15, and Debian 7
 Services that will be installed and configured are
 
 	1. vsftpd - ftp server
-	2. libtorrent/rtorrent
-	3. rutorrent
-	4. Nginx
-	5. autodl-irssi
+	2. deluge/deluge-web/deluge-console
+	3. Nginx
 
 I use nginx, it uses less system resources, and I find it easier to configure than apache2.
 
@@ -37,7 +35,7 @@ Run the script from root, or if you have a sudo user already set up you can run 
 
 First download the script:
 
-	wget --no-check-certificate https://raw.githubusercontent.com/arakasi72/rtinst/master/rtinst.sh
+	wget --no-check-certificate https://raw.githubusercontent.com/shinji257/rtinst/deluge/rtinst.sh
 
 and then to run it:
 
@@ -72,7 +70,7 @@ To access that information just use the following command
 
 A number of additional scripts will be installed that carry out a variety of useful functions. These will be installed by the main script but if you want to get the latest versions you can run the following:
 
-	wget --no-check-certificate https://raw.githubusercontent.com/arakasi72/rtinst/master/rtgetscripts
+	wget --no-check-certificate https://raw.githubusercontent.com/shinji257/rtinst/deluge/rtgetscripts
 	sudo bash rtgetscripts
 	rm rtgetscripts
 
@@ -125,9 +123,3 @@ examples:
 	rt start
 	rt restart
 
-If you use the option -i it will switch to irssi
-
- 	rt -i
-	rt -i stop
-	rt -i start
-	rt -i restart
